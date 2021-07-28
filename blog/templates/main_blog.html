@@ -1,0 +1,125 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>LAPT | BLOG</title>
+  </head>
+  <body class="background-color : wheat;">
+    <nav class="navbar navbar-light bg-dark">
+  <div class="container-fluid" style="color: white;">
+        <p class="h2">
+            Linear Algebra in Deep Learning
+        </p> 
+  </div>
+</nav>
+
+    {% comment %} Body Content {% endcomment %}
+
+    <div class="container"> 
+      <p class="h3" style="text-align:center;"> 
+        Author
+      <p> 
+      <p> 
+        i am Mukesh Sahani, CSE undergraduate from CCET, i have worked of many deep learning projects, major one is a framework 
+        for deep learning, you can check out my framework on my github profie.
+      </p> 
+    </div> 
+
+
+    <div class="container"> 
+        <p class="h2" style="text-align : center"> 
+            Introduction
+        </p> 
+        <p style="font-size : 20px;">
+        Aritifical Intelligence is a Big Buzz Word in today's Market and in this blog we will talk about Linear Algebra in Machine 
+        Learning(<b>Deep Learning</b>), or should i say deep learning in more specific way but Before starting or tell you about 
+        what i think about Deep Learning and it's core relation with Linear Algebra let me define what machine Learning is so, after 
+        reading the whole blog you will conclue whether we achieved the target or not.so, according to father of AI, john maccorty AI is<i><b> 
+        devloping a computer program which can do things for which it is not explicitly programmed</b></i>.so, now you know what we  
+        can call an AI.but here we are not to talk about what AI is but we want to expore it's relation with Linear Algebra, ok allow me to 
+        shock you are bit <i><b>y = m * x + c</b></i> this equation is enough to make a machine Learn Linear Relationship sounds weired, but 
+        give me some time i will clear this with time. There might be many interpretation you have seen or learned in mathematics 
+        about this linear equtation one of which goes like m is slope and c is intercept of a line in xy plane which is totally correct, 
+        but in field of Deep Learning we will interpreate this equation in this way.so in rest of the blog you will learn about this equation 
+        only but with some more layering( this part always excite me a lot. ) 
+
+        </p>  
+    </div> 
+
+
+
+    <div class="container"> 
+        <p class="h2" style="text-align : center"> 
+            Basic Block for Deep Learning
+        </p> 
+        <p style="font-size : 20px;">
+        in introduction you have got a bit idea about linear equations are building block of deep learning(Neural Network),but how this 
+        simple linear equation can turns in complex models which can learn relationship among different attributes of our target system. 
+        so, now linear algebra(work of matrices) comes in picture now think you have a system which you have lots of attribute. 
+        let's go with conventional House Rent Predictoin Model so,we will have features realted to a room like area of room, it's color, 
+        it's distance from school, it's distance from hospitals, number of rooms and from all these features we want to get the value of 
+        rent of house, now we have to model this mathematically so, we have some finite number of observation of room(pre recorded) 
+        and we will store all observations in a matrix with each columns representing attribute of our model. 
+        </p>  
+
+        <table class="table"> 
+          <thead> 
+            <th scope="col"> 
+               area_of_room
+            </th> 
+            <th scope="col"> 
+                color
+            </th> 
+
+            <th scope="col"> 
+                school_distance
+            </th> 
+
+            <th scope="col"> 
+                Hospital_distance
+            </th> 
+  
+            <th scope="col"> 
+              number_of_rooms
+            </th> 
+
+          </thead> 
+        </table> 
+
+
+        <p style="font-size : 20px"> 
+          So, columns of matrix wil represent these features and rows of matrix will repsenting indepdent obseravation and we want to develop a model 
+          which can learn relationship between input features and target we want to predict. <br/> 
+          now, let's focus on this equation. 
+
+        </p> 
+    
+        <img  src="{% static 'images/dl.png' %}" style="height : 400px; width : 700px;margin-left : 250px;" /> 
+
+        <p style="font-size : 20px"> 
+          As show in image above consider matrix with <b>W</b> square matrix as Data matrix and <b>X</b> as weight matrix now 
+          we can get the eqution <b>a1 = W1*X1 + W2 * X2 + W3*X3 + W4*X4 + b </b> as our linear eqution which is providing the linear 
+          relationship since the start. but this model learn is work of <b>calculas, error analysis and optimization probleams</b> 
+          but in this blog we only wanted to get any idea of user of Linear Algebra in Deep Learning.so, linear algebra Helps us most of time in 
+          <b>Feature Engineering</b> it is most crucial part of deep learning and should done with lots of care. 
+        </p>
+    
+    </div> 
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
